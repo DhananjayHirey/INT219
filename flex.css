@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    min-height: 400px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    row-gap: 200px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>forms</h2>
+    <!-- action: on clicking on submit what will happen -->
+     <!-- get method size: 3000 characters -->
+      <!-- post method size: no limit -->
+    <form action="" method="get ">
+        <label for="uname">Enter Name: </label>
+        <input type="text" name="uname" id="uname" size="100" maxlength="5" placeholder="Enter Name" required>
+        <!-- id should be same as for of label -->
+         <!-- IF value is specfied then placeholder will not be visible -->
+          <br>
+          <br>
+        <label for="pass">Password: </label>
+        <input type="password" id="pass" name="pass" size="100">
+        <br>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="mail1" placeholder="xyz@gmail.com" size="100" maxlength="100" >
+        <br>
+        <!-- by default name of button is submit. to set custom name of button add value as custom name -->
+        <br>
+
+        <label for="review">Review: </label>
+        <textarea name="review" id="review" rows="12" cols="100" ></textarea>
+        <br>
+
+        <label for="hobby">Choose your hobby</label>
+        <input type="checkbox" name="hobby" id="hobby" value="A">A
+        <input type="checkbox" name="hobby" id="hobby" value="B" >B
+        <input type="checkbox" name="hobby" id="hobby" value="C" >C
+
+        <br>
+
+        <label for="gender">Choose your gender</label>
+        <input type="radio" name="gender" id="male" value="Male"><label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female" ><label for="female">Female</label>
+        <!-- Same name helps to know that only one can be selected -->
+        <br>
+
+        <label for="statesel">Select State: </label>
+        <select name="statesel" id="statesel" size="4">
+            <option value="choosest">Choose State</option>
+            <option value="punjab">Punjab</option>
+            <option value="maharashtra">Maharashtra</option>
+            <option value="kerela">Kerela</option>
+            <option value="chhatisgarh">ChattisGarh</option>
+        </select>
+        <br>
+
+        <label for="filesel" >Select File</label>
+        <input type="file" id="filesel" accept="image/*">
+        <br>
+        <input type="image" value="submit form" src="/Tomodachi Game - OP - Large 06.jpg" width="100" height="40">
+        <!-- input type image is by default submit action -->
+
+        <input type="reset" id="resetform" value="Reset Form">
+    </form>
+</body>
+</html>
